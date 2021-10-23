@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/
+ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" sizes="50x50" href="imgs/favicon.jfif" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Spectrum Jobs | Job Seeker Registeration</title>
+  </head>
+  <body>
+    <section class="registration">
+      <div class="form-1">
+        <form action="#" class="resume-upload-form">
+          <label class="upload-resume" for="upload">Upload Resume</label>
+          <input type="file" name="uploadResume" autofocus />
+          <button class="save">Save</button>
+        </form>
+      </div>
+      <!-- form-1 ends  -->
+      <div class="hr-line-or">
+        <div class="hr-1"></div>
+        <div class="hr-text">OR</div>
+        <div class="hr-1"></div>
+      </div>
+      <div class="form-2">
+        <form action="#" class="details-form">
+          <div class="form-info">
+            <label for="name" class="details-form-label">Name</label>
+            <input
+              type="text"
+              name="fullName"
+              class="form-input"
+              placeholder="Enter your full name"
+            />
+          </div>
+          <div class="form-info">
+            <label for="streetAdd" class="details-form-label"
+              >Street Address</label
+            >
+            <input
+              type="text"
+              name="streetAdd"
+              class="form-input"
+              placeholder="Enter your street Address"
+            />
+          </div>
+          <div class="form-info">
+            <label for="city" class="details-form-label">City</label>
+            <input
+              type="text"
+              name="city"
+              class="form-input"
+              placeholder="Enter your current city"
+            />
+          </div>
+          <h3 class="section-heading">Contact Information</h3>
+          <div class="form-info">
+            <label for="emailId" class="details-form-label">Email ID</label>
+            <input
+              type="email"
+              name="emailId"
+              class="form-input"
+              placeholder="Enter your active email id"
+            />
+          </div>
+          <div class="form-info">
+            <label for="mobileNum" class="details-form-label"
+              >Mobile Number</label
+            >
+            <input
+              type="text"
+              name="mobileNum"
+              class="form-input"
+              placeholder="Enter your active mobile number"
+            />
+          </div>
+          <h3 class="section-heading">Education</h3>
+          <div class="form-info">
+            <div class="show-details">
+              <div class="about-education">
+                <span class="course-detail">B.Tech. in Computer Science</span>
+                <span class="university-detail">Random University</span>
+                <span class="passout-detail">2021</span>
+              </div>
+              <div class="edit-del">
+                <i class="fas fa-pen edit-font"></i>
+                <i class="fas fa-trash edit-font"></i>
+              </div>
+            </div>
+            <!-- show details ends  -->
+          </div>
+          <div class="hr-line"></div>
+          <div class="form-info btn">
+            <a class="add-edu-btn" id="addEduBtn"
+              ><i class="fas fa-plus-circle"></i> Add education</a
+            >
+          </div>
+          <h3 class="section-heading">Work Experience</h3>
+          <div class="form-info">
+            <label for="jobTitle" class="details-form-label">Job Title</label>
+            <input
+              type="text"
+              name="jobTitle"
+              class="form-input"
+              placeholder="e.g. Android Developer"
+            />
+          </div>
+          <div class="form-info">
+            <label for="company" class="details-form-label">Company</label>
+            <input
+              type="text"
+              name="company"
+              class="form-input"
+              placeholder="e.g. IT solution private limited"
+            />
+          </div>
+          <div class="form-info">
+            <label for="company-city" class="details-form-label"
+              >Company City</label
+            >
+            <input
+              type="text"
+              name="company-city"
+              class="form-input"
+              placeholder="e.g. Mumbai"
+            />
+          </div>
+          <div class="form-info time-period">
+            <span class="details-form-label time-period-label"
+              >Time Period</span
+            >
+            <div class="checkbox details-form-checkbox">
+              <input type="checkbox" name="company-city" class="form-input" />
+              <span>I currently work here</span>
+            </div>
+            <div class="form-info">
+              <span class="details-form-label">From</span>
+              <div class="from-time-period">
+                <input type="text" id="from-time" class="form-input" />
+              </div>
+            </div>
+            <div class="form-info">
+              <span class="details-form-label">To</span>
+              <div class="to-time-period">
+                <input type="text" id="to-time" class="form-input" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-info">
+            <label for="description" class="details-form-label"
+              >Description</label
+            >
+            <textarea
+              type="text"
+              name="company"
+              class="form-input"
+              placeholder="In 30 or more words describe your responsibilities"
+              rows="10"
+              cols="45"
+            ></textarea>
+          </div>
+
+          <h3>Skills / IT Skills</h3>
+          <b>Recommendation:</b>
+          <span>include 3-5 of your top skills to help you stand out</span>
+          <div class="form-info">
+            <label for="itSkills" class="details-form-label"
+              >Add New Skill</label
+            >
+            <input
+              type="text"
+              name="itSkills"
+              class="form-input"
+              placeholder="e.g. Microsoft Office, Tally, Python etc."
+            />
+            <!-- <button class="skill-btn" id="skill-btn">Add</button> -->
+          </div>
+          <div class="hr-line"></div>
+          <div class="form-info">
+            <div class="show-details">
+              <div class="about-education">
+                <span class="course-detail">php</span>
+              </div>
+              <div class="edit-del">
+                <i class="fas fa-pen edit-font"></i>
+                <i class="fas fa-trash edit-font"></i>
+              </div>
+            </div>
+            <!-- show details ends  -->
+          </div>
+          <div class="hr-line"></div>
+          <div class="form-info">
+            <div class="show-details">
+              <div class="about-education">
+                <span class="course-detail">python</span>
+              </div>
+              <div class="edit-del">
+                <i class="fas fa-pen edit-font"></i>
+                <i class="fas fa-trash edit-font"></i>
+              </div>
+            </div>
+            <!-- show details ends  -->
+          </div>
+
+          <!-- <div class="form-info">
+            <label for="workExp" class="details-form-label"
+              >Total Work Experience
+            </label>
+            <select class="form-select" aria-label="select experience years">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6-10</option>
+              <option value="11">11-15</option>
+              <option value="16">16-20</option>
+              <option value="20">20+</option>
+            </select>
+            <span>Year(s)</span>
+            <select class="form-select" aria-label="select experience years">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+            </select>
+            <span>Month(s)</span>
+          </div> -->
+          <div class="save-detail">
+            <button class="save-btn" id="save-btn">Save</button>
+          </div>
+        </form>
+      </div>
+      <!-- form-2 ends  -->
+    </section>
+
+    <!-- add education modal -->
+    <div class="edu-modal" id="addEdu">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Review your Education</h3>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="modal-form">
+            <div class="modal-input-field">
+              <label for="addDegree" class="add-edu-label">Degree</label>
+              <input
+                type="text"
+                class="add-degree modal-input"
+                id="addDegree"
+                placeholder="e.g. B.Tech., MBA, PhD"
+              />
+            </div>
+            <div class="modal-input-field">
+              <label for="addDegreeField" class="add-edu-label"
+                >Field of Study</label
+              >
+              <input
+                type="text"
+                class="add-degree-field modal-input"
+                id="addDegreeField"
+                placeholder="e.g. Computer Science, Nursing etc."
+              />
+            </div>
+            <div class="modal-input-field">
+              <label for="addUniversity" class="add-edu-label"
+                >College Or University</label
+              >
+              <input
+                type="text"
+                class="add-university modal-input"
+                id="addUniversity"
+                placeholder="e.g. IIT Bombay, VIT"
+              />
+            </div>
+            <div class="modal-input-field">
+              <label for="addUniversity" class="add-edu-label">City</label>
+              <input
+                type="text"
+                class="add-university modal-input"
+                id="addUniversity"
+                placeholder="e.g. Mumbai, Delhi, Kolkata"
+              />
+            </div>
+            <div class="modal-input-field modal-checkbox">
+              <input
+                type="checkbox"
+                class="add-university modal-input-checkbox"
+                id="addUniversity"
+                value="1"
+              />
+              <label for="addUniversity" class="add-edu-label"
+                >I currently go here</label
+              >
+            </div>
+            <div class="modal-input-field">
+              <span class="add-edu-label">From</span>
+              <input type="text" id="edu-from-time" class="modal-input" />
+            </div>
+            <div class="modal-input-field">
+              <span class="add-edu-label">To</span>
+              <input type="text" id="edu-to-time" class="modal-input" />
+            </div>
+            <button class="save-btn">Save</button>
+            <button class="closeBtn" id="closeBtn">cancle</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+      $(function () {
+        // default date Selection
+        // $("#from-time").datepicker({
+        //   defaultDate: "09/22/2019",
+        // });
+        // for education modal
+        $("#edu-from-time").datepicker();
+        $("#edu-to-time").datepicker();
+
+        // for work experience
+        $("#from-time").datepicker();
+        $("#to-time").datepicker();
+      });
+    </script>
+  </body>
+</html>
